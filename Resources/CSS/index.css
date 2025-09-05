@@ -335,10 +335,11 @@ nav .row {
     background-size: cover;
     background-position: center;
     width: 100vw;
-    height: 90vh;
+    min-height: 90vh;
     margin-top: 20px;
     margin-bottom: 20px;
     color: #fff;
+    overflow: hidden; 
 }
 
 .testimonials .testimonial-outer-bg .testimonial-head {
@@ -392,8 +393,9 @@ nav .row {
 
 .user-testimonial figure img {
     width: 100px;
-    height: 120px;
+    height: 100px;
     border-radius: 50%;
+    object-fit: cover; 
 }
 
 /* Subscription Section */
