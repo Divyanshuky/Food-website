@@ -342,6 +342,7 @@ nav .row {
 }
 
 .testimonials .testimonial-outer-bg .testimonial-head {
+    
     padding: 50px;
     text-transform: uppercase;
     text-align: center;
@@ -398,7 +399,8 @@ nav .row {
 /* Subscription Section */
 
 .subscriptions {
-    padding: 15px;
+    padding: 6rem 5vw;
+
 }
 
 .subscriptions .subs-head {
