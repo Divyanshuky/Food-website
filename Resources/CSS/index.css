@@ -139,12 +139,12 @@ nav .row {
     flex-wrap: wrap;
     justify-content: center;
     list-style-type: none;
-    gap: 10vw;
+    gap: 2rem;
     padding: 0;
 }
 
 .features-card li {
-    flex: 1 1 250px;
+    flex: 1 1 280px;
     max-width: 300px;
     text-align: left;
 }
