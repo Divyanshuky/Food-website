@@ -32,34 +32,28 @@ header {
     position: relative;
 }
 
-nav {
-  padding: 0.5rem 1rem;
-}
 
 nav .row {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: nowrap;
+  padding: 1rem 2rem;
+  flex-wrap: wrap; /* allows wrapping when needed */
 }
 
 .logo {
   width: auto;
-  height: 80px;
+  height: 100px;
   border-radius: 100%;
 }
 
-/* Links styling */
 .row-links {
   display: flex;
-  gap: 2rem;
-  overflow-x: auto;         /* enables scrolling */
-  white-space: nowrap;      /* prevent links from wrapping */
-  scrollbar-width: none;    /* hide scrollbar (Firefox) */
-}
-
-.row-links::-webkit-scrollbar {
-  display: none;            /* hide scrollbar (Chrome/Safari/Edge) */
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 5rem;
+  margin-top: 35px;
 }
 
 .row-links a {
@@ -68,7 +62,6 @@ nav .row {
   letter-spacing: 1px;
   text-transform: uppercase;
   transition: 0.3s ease-in-out;
-  flex: 0 0 auto;           /* prevent links from shrinking */
 }
 
 .row-links a:hover {
@@ -76,16 +69,27 @@ nav .row {
   color: #7D5BA6;
 }
 
-/* 📱 Responsive tweaks */
+/* 📱 Responsive Styles */
 @media (max-width: 768px) {
+  nav .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .logo {
-    height: 60px;
-    margin-right: 1rem;
+    height: 70px; /* slightly smaller logo for mobile */
+    margin-bottom: 1rem;
   }
 
   .row-links {
-    gap: 1.2rem; /* tighter spacing on phones */
-    font-size: 0.9rem;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    justify-content: center;
+  }
+
+  .row-links a {
+    font-size: 1rem;
   }
 }
 
